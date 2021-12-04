@@ -1,13 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './page/home'
+import {Main} from './theme/components'
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes> 
-          <Route path="/" element={<Home />} />  
-          <Route path="*" element={<div>Page not found</div>} />  
-      </Routes>
+      <Main> 
+        <Routes> 
+            <Route path="/" element={<Home />} />  
+            <Route path="*" element={<div>Page not found</div>} />  
+        </Routes>
+      </Main> 
     </BrowserRouter>
   );
 }

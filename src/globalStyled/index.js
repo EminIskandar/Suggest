@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 
 *{
-    box-sizing: unset;
+    box-sizing: border-box;
 }
 body,h1,h2,h3,h4,h5,h6,ul,li,p{
     margin: 0;

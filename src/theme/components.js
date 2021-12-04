@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import colors from "./color"; 
 
-const button = styled.button`
+export const Main = styled.main`
+    width: 1440px; 
+    margin: 0 auto;
+    padding: 94px 165px 0; 
+`
+export const button = styled.button`
     height: 44px;
     width: 158px; 
     background-color: ${colors.electricPurple} ; 
