@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container , LeftSide, RightSide } from './styled'
-import {Board, Tags} from 'components'
+import {Board, Tags, Roadmap} from 'components'
 
 export default function Home() {
     return (
@@ -8,6 +8,7 @@ export default function Home() {
             <LeftSide>
                 <Board/>
                 <Tags/>
+                <Roadmap/>
             </LeftSide>
             <RightSide></RightSide> 
         </Container>

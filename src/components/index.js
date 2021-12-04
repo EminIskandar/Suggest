@@ -3,4 +3,4 @@ import Tags from './tags'
 import Roadmap from './roadmap'
 
 
-export { Board, Tags }
+export { Board, Tags, Roadmap }
