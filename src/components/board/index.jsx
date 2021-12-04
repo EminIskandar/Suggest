@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Container , Text, Title, Category,  } from './styled' 
+import {Container , Text, Title, Category, ToggleMenu } from './styled' 
 
 export default function Index() {
     return (
@@ -7,7 +7,14 @@ export default function Index() {
              <Text>
                  <Title>Frontend Mentor</Title>
                  <Category>Feedback Board</Category> 
-             </Text> 
+             </Text>
+             <ToggleMenu className=''>
+                 <ul>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </ToggleMenu>
          </Container>
     )
 }

@@ -22,6 +22,8 @@ export const Container = styled.div`
         border-radius: 0;
         height: 72px;
         align-items: center;
+        justify-content: space-between; 
+        position: relative;
     }
 `
 export const Text = styled.div`
@@ -36,7 +38,7 @@ export const Title = styled(H2)`
         letter-spacing: -0.1875px; 
     }
 `
-export const Category = styled(Body2)`
+export const Category = styled(Body2)` 
     color : ${colors.white};  
     @media (max-width:596px){    
         font-size: 13px; 
@@ -44,4 +46,36 @@ export const Category = styled(Body2)`
         line-height: 19px;
         letter-spacing: 0;    
     } 
+`
+
+export const ToggleMenu = styled.div`
+    display: none;
+
+    li{
+        height: 3px;
+        width: 20px; 
+        background-color: ${colors.white};
+    }
+
+    & ul li:not(:first-child){
+        margin-top: 4px;
+    }
+
+    &.open{ 
+        & ul li:nth-child(2){
+            display: none;
+        }
+
+        & ul li:nth-child(1){
+           transform: rotate(45deg) translate(3px, 2px);
+        }
+
+        & ul li:nth-child(3){
+           transform: rotate(-45deg) translate(3px, -2px);
+        }
+    }
+
+    @media (max-width:596px){   
+        display: block;
+    }
 `
