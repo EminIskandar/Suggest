@@ -14,6 +14,10 @@ export const Container = styled.div`
         width: calc(100% / 3 - 6.5px); 
         margin-top: 0px;
     }
+
+    @media (max-width: 596px){
+        display: none;
+    }
 `
 export const Header = styled.div`
     display: flex;

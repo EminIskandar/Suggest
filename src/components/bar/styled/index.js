@@ -12,6 +12,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:596px){   
+        border-radius: 0;
+    }
+ 
 `
 export const Left = styled.div`
     display: flex;
@@ -20,6 +25,10 @@ export const Left = styled.div`
 export const Right = styled.div``
 export const Suggest = styled.div`
     display: flex;
+
+    @media (max-width: 768px){
+        display: none;
+    }
 `
 export const Icon = styled.div`
     margin-right: 16px;
@@ -30,6 +39,10 @@ export const Count = styled(H3)`
 export const Short = styled.div`
     margin-left: 38px;
     position: relative;
+
+    @media (max-width: 768px){
+        margin-left: 0;
+    }
 `
 export const Selected = styled.div`
     display: flex;
@@ -71,4 +84,9 @@ export const List = styled.div`
 
     display:none;
 `
-export const Add = styled(button)``
+export const Add = styled(button)`
+
+    @media (max-width: 768px){
+        width: 138px;
+    }
+`

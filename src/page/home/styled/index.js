@@ -18,6 +18,11 @@ export const LeftSide = styled.div`
         margin-bottom: 40px;
     }
 
+    @media (max-width:596px){   
+        width: 100%;
+        margin-bottom: 0;
+    }
+
 `
 export const RightSide = styled.div`
     width: 825px;

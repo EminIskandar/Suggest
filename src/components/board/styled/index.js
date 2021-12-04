@@ -14,6 +14,13 @@ export const Container = styled.div`
         width: calc(100% / 3 - 6.5px); 
         height: 178px; 
     }
+
+    @media (max-width:596px){   
+        width: 100%;
+        border-radius: 0;
+        height: 72px;
+        align-items: center;
+    }
 `
 export const Text = styled.div`
 

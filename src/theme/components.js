@@ -15,6 +15,14 @@ export const Main = styled.main`
         width: 100vw;
         padding: 94px 20px 0; 
     }
+
+    @media (max-width:996px){   
+        padding: 56px 20px 0; 
+    }
+
+    @media (max-width:596px){   
+        padding: 0; 
+    }
 `
 export const button = styled.button`
     height: 44px;
