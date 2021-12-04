@@ -1,15 +1,13 @@
-import React from 'react'
-import { H2, Body2 } from 'typography'
-import {Container , Text } from './styled'
-import colors from 'color'
+import React from 'react' 
+import {Container , Text, Title, Category,  } from './styled' 
 
 export default function Index() {
     return (
          <Container>
              <Text>
-                <H2 color={colors.white} >Frontend Mentor</H2>
-                <Body2 color={colors.white} >Feedback Board</Body2>
-             </Text>
+                 <Title>Frontend Mentor</Title>
+                 <Category>Feedback Board</Category> 
+             </Text> 
          </Container>
     )
 }
