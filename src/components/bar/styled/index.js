@@ -4,7 +4,7 @@ import { H3, H4, Body3 } from 'typography'
 import {button} from 'themeComponents'
 
 export const Container = styled.div`
-    width: 825px; 
+    width: 100%; 
     height: 72px;
     border-radius: 10px;
     background-color: ${colors.rhino};
