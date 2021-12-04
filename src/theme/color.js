@@ -11,7 +11,8 @@ const colors = {
     waikawaGrey: '#647196',
     blush : '#F49F85',
     crystalBlue : '#62BCFA',
-    heliotrope : '#C75AF6'
+    heliotrope : '#C75AF6',
+    periwinkle :'#CFD7FF'
 
 }
 

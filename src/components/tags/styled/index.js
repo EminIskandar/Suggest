@@ -29,4 +29,8 @@ export const Name = styled.div`
         background-color: ${colors.ultramarineBlue};
         color: ${colors.white};
     }
+
+    &:hover{
+        background-color: ${colors.periwinkle }; 
+    }
 `
