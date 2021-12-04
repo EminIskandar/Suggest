@@ -8,9 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body,h1,h2,h3,h4,h5,h6,ul,li,p{
     margin: 0;
-    padding: 0; 
-    color: #fff;
-    font-family: 'Roboto', sans-serif; 
+    padding: 0;  
 } 
 a{
     text-decoration: none; 
@@ -30,8 +28,8 @@ button{
     cursor: pointer;
 }
 body{ 
-    background-color: #181818; 
-    font-family: 'Roboto', sans-serif;  
+    background-color: #F7F8FD; 
+    font-family: 'Jost', sans-serif;
 }   
 
 `
