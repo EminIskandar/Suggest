@@ -6,7 +6,7 @@ export default function Index() {
     return (
         <Container>
             <Tags>
-                <Name>
+                <Name className='selected'>
                     <Body3>All</Body3>
                 </Name>
                 <Name>
