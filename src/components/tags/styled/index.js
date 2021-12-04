@@ -8,6 +8,12 @@ export const Container = styled.div`
     width: 255px; 
     border-radius: 10px; 
     padding: 24px;
+
+    @media (max-width:996px){  
+        width: calc(100% / 3 - 6.5px); 
+        height: 178px;
+        margin-top: 0px;
+    }
 `
 
 export const Tags = styled.div`

@@ -9,6 +9,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+
+    @media (max-width:996px){  
+        width: calc(100% / 3 - 6.5px); 
+        height: 178px; 
+    }
 `
 export const Text = styled.div`
 
