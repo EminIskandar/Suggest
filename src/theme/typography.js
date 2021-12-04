@@ -5,7 +5,7 @@ export const H1 = styled.h1`
     font-weight: 700;
     line-height: 35px;
     letter-spacing: -0.3333333432674408px;
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const H2 = styled.h2` 
@@ -13,7 +13,7 @@ export const H2 = styled.h2`
     font-weight: 700;
     line-height: 29px;
     letter-spacing: -0.25px; 
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const H3 = styled.h3` 
@@ -21,7 +21,7 @@ export const H3 = styled.h3`
     font-weight: 700;
     line-height: 26px;
     letter-spacing: -0.25px; 
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const H4 = styled.h4` 
@@ -29,7 +29,7 @@ export const H4 = styled.h4`
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.1944444477558136px;  
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const Body1 = styled.p` 
@@ -37,7 +37,7 @@ export const Body1 = styled.p`
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0px; 
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const Body2 = styled.p`  
@@ -45,7 +45,7 @@ export const Body2 = styled.p`
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0px; 
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
 
 export const Body3 = styled.p`   
@@ -53,5 +53,5 @@ export const Body3 = styled.p`
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0px; 
-    color : ${ props.color };
+    color : ${ props => props.color };
 `
