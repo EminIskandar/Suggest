@@ -2,7 +2,7 @@ import React from 'react'
 import { H2, Body2 } from 'typography'
 import {Container , Text } from './styled'
 
-export default function index() {
+export default function Index() {
     return (
          <Container>
              <Text>
