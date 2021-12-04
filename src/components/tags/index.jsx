@@ -2,10 +2,10 @@ import React from 'react'
 import {Body3} from 'typography'
 import {Container, Tags, Name } from './styled'
 
-export default function Index() {
+export default function Index({theme}) { 
     return (
-        <Container>
-            <Tags>
+        <Container theme={theme}>
+            <Tags theme={theme}>
                 <Name className='selected'>
                     <Body3>All</Body3>
                 </Name>

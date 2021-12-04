@@ -10,13 +10,13 @@ export const Container = styled.div`
     border-radius: 10px; 
     padding: 24px;
 
-    @media (max-width:996px){  
-        width: calc(100% / 3 - 6.5px); 
-        margin-top: 0px;
+    @media (max-width:996px){   
+        width: ${ props => props.theme === 'toggle-menu' ? "100%" :'calc(100% / 3 - 6.5px)'}; 
+        margin-top: ${ props => props.theme === 'toggle-menu' ? "24px" :'0'};
     }
 
     @media (max-width: 596px){
-        display: none;
+        display: ${ props => props.theme === 'toggle-menu' ? "" :'none'}; 
     }
 `
 export const Header = styled.div`

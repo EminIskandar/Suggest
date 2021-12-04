@@ -15,6 +15,8 @@ export const Container = styled.div`
     @media (max-width:996px){  
         width: calc(100% / 3 - 6.5px); 
         height: 178px; 
+        z-index: 25;
+        position: relative;
     }
 
     @media (max-width:596px){   

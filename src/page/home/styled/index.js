@@ -36,5 +36,4 @@ export const RightSide = styled.div`
     @media (max-width:996px){  
         width: 100%;
     }
-`
-export const ToggleMenu = styled.div``
+` 

@@ -1,9 +1,9 @@
 import React from 'react' 
 import {Container, Header, Title, Link, Lists, ListsItem, Name, Count} from './styled'
 
-export default function Index() {
+export default function Index({theme}) {
     return (
-        <Container>
+        <Container theme={theme}>
             <Header>
                 <Title>Roadmap</Title>
                 <Link>View</Link>

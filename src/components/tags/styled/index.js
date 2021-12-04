@@ -10,13 +10,13 @@ export const Container = styled.div`
     padding: 24px;
 
     @media (max-width:996px){  
-        width: calc(100% / 3 - 6.5px); 
+        width: ${ props => props.theme === 'toggle-menu' ? "100%" :'calc(100% / 3 - 6.5px)'};
         height: 178px;
-        margin-top: 0px;
+        margin-top: 0px; 
     }
 
     @media (max-width: 596px){
-        display: none;
+        display: ${ props => props.theme === 'toggle-menu' ? "" :'none'}
     }
 `
 
@@ -24,8 +24,8 @@ export const Tags = styled.div`
     display: flex; 
     flex-wrap: wrap;
     
-    @media (max-width: 768px){
-        height: 100%;
+    @media (max-width: 768px){ 
+        height: ${ props => props.theme === 'toggle-menu' ? "auto" :'100%'};
         overflow: hidden;
     }
 `

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container , LeftSide, RightSide, ToggleMenu } from './styled'
-import { Board, Tags, Roadmap, Bar, Suggestions } from 'components'
+import { Container , LeftSide, RightSide } from './styled'
+import { Board, Tags, Roadmap, Bar, Suggestions, ToggleMenu } from 'components'
 
 export default function Home() {
     return (
