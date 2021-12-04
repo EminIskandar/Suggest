@@ -7,7 +7,8 @@ export const Container = styled.div`
     border-radius: 10px; 
     padding: 24px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end;
 `
 export const Text = styled.div`
 
