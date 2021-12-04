@@ -37,3 +37,4 @@ export const RightSide = styled.div`
         width: 100%;
     }
 `
+export const ToggleMenu = styled.div``

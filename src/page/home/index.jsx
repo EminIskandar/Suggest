@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container , LeftSide, RightSide } from './styled'
+import { Container , LeftSide, RightSide, ToggleMenu } from './styled'
 import { Board, Tags, Roadmap, Bar, Suggestions } from 'components'
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
                 <Board/>
                 <Tags/>
                 <Roadmap/>
+                <ToggleMenu/>
             </LeftSide>
             <RightSide>
                 <Bar/>
