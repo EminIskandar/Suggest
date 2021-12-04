@@ -12,7 +12,8 @@ const colors = {
     blush : '#F49F85',
     crystalBlue : '#62BCFA',
     heliotrope : '#C75AF6',
-    periwinkle :'#CFD7FF'
+    periwinkle :'#CFD7FF',
+    selago : '#F2F4FE'
 
 }
 
