@@ -6,7 +6,7 @@ module.exports = function(config, env) {
   config.resolve.alias = Object.assign(config.resolve.alias, {
     "page": resolve("src/page"), 
     "components": resolve("src/components"),  
-    "colors" : resolve("src/theme/colors"),  
+    "color" : resolve("src/theme/color"),  
     "typography" : resolve("src/theme/typography"), 
     "themeComponents" : resolve("src/theme/components"), 
   });
