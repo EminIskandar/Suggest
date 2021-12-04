@@ -1,9 +1,13 @@
 import React from 'react'
+import { Container , LeftSide, RightSide } from './styled'
 
-export default function home() {
+export default function Home() {
     return (
-        <div>
-            
-        </div>
+        <Container>
+            <LeftSide>
+
+            </LeftSide>
+            <RightSide></RightSide> 
+        </Container>
     )
 }

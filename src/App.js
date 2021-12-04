@@ -5,7 +5,7 @@ import {Main} from './theme/components'
 function App() {
   return (
     <BrowserRouter>
-      <Main> 
+      <Main>  
         <Routes> 
             <Route path="/" element={<Home />} />  
             <Route path="*" element={<div>Page not found</div>} />  
