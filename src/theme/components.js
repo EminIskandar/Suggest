@@ -15,7 +15,9 @@ export const button = styled.button`
     line-height: 20px;
     letter-spacing: 0px; 
     transition: all .3s ease-in-out;
-
+    border-radius: 10px;
+    color: ${colors.white};
+    
     &:hover{
         background-color: ${colors.heliotrope};
     }

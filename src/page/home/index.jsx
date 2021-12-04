@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container , LeftSide, RightSide } from './styled'
-import {Board, Tags, Roadmap} from 'components'
+import { Board, Tags, Roadmap, Bar } from 'components'
 
 export default function Home() {
     return (
@@ -10,7 +10,9 @@ export default function Home() {
                 <Tags/>
                 <Roadmap/>
             </LeftSide>
-            <RightSide></RightSide> 
+            <RightSide>
+                <Bar/>
+            </RightSide> 
         </Container>
     )
 }

@@ -26,6 +26,7 @@ button:focus, input:focus{
 button{
     padding: 0;
     cursor: pointer;
+    border: none;
 }
 body{ 
     background-color: #F7F8FD; 
