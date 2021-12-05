@@ -12,6 +12,8 @@ const suggestionsSlice = createSlice({
         }
     }
 });
+
+export const {change} = suggestionsSlice.actions
     
 export default suggestionsSlice;
      
