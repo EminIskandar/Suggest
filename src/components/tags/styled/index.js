@@ -38,6 +38,7 @@ export const Name = styled.div`
     margin-right: 6px;
     margin-bottom: 14px;
     cursor: pointer;
+    text-transform: capitalize;
 
     &.selected {
         background-color: ${colors.ultramarineBlue};
