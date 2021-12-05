@@ -25,6 +25,7 @@ export default function Index({theme}) {
         dispatch(
             changeSuggests({payload:data})
         ) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selected])
 
     return (

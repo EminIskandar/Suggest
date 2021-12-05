@@ -27,6 +27,7 @@ export default function Index() {
           } 
 
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

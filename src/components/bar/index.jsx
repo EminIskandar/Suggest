@@ -34,6 +34,7 @@ export default function Index() {
                 change({payload : filteredData})
             ) 
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selected])
 
     return (
