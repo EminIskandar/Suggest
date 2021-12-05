@@ -4,9 +4,13 @@ import db from '../../../db/db.json'
 const  initialState = db.productRequests
 
 const suggestionsSlice = createSlice({
-    name: "tags",
+    name: "suggest",
     initialState: initialState,
-    reducers:  {}
+    reducers:  {
+        change : (state , {payload}) => {
+            return state = payload
+        }
+    }
 });
     
 export default suggestionsSlice;
