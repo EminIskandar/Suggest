@@ -2,8 +2,8 @@ import tagsSlice from 'components/tags/tagsSlice'
 import suggestionsSlice from 'components/suggestions/suggestionsSlice'
 
 const reducer = {
-    selectedTag :  tagsSlice,
-    suggests : suggestionsSlice,
+    selectedTag :  tagsSlice.reducer,
+    suggests : suggestionsSlice.reducer,
 }
 
 
