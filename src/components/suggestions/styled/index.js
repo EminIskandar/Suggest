@@ -43,6 +43,7 @@ export const Category = styled(Body1)`
     display: inline-block;
     border-radius: 10px;
     margin-top:12px;
+    text-transform: capitalize;
 `
 export const CommentsCount = styled.div`
     display: flex; 
