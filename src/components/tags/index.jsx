@@ -17,7 +17,7 @@ export default function Index({theme}) {
             <Tags theme={theme}>
                 {
                     allTags.map( (name) => {
-                        return  <Name className={selected === name  ? 'selected' : ''} onClick={ () => {handleSelectedTag(name)} }>
+                        return  <Name className={selected === name  ? 'selected' : ''} onClick={ () => {handleSelectedTag(name)} } key={name}>
                                     <Body3>{name}</Body3>
                                 </Name>
                     })
