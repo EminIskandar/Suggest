@@ -60,7 +60,22 @@ export const Name = styled(H4)`
     color: ${colors.white};
     margin-left: 5px;
 `
-export const ListItem = styled(Body3)`
+export const ListItem = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & ${Icon}{
+        display:none;
+    }
+    
+    &.selected{
+        ${Icon}{
+            display:block;
+        }
+    }
+`
+export const ListName = styled(Body3)`
     color: ${colors.waikawaGrey};
     font-weight: 400;
     padding: 12px 24px;

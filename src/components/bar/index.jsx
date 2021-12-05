@@ -1,7 +1,7 @@
 import React from 'react'
 import { 
     Container, Left, Suggest, Icon, Count, Short, Title, 
-    Selected, List, ListItem, Right, Add, Name
+    Selected, List, ListItem, Right, Add, Name, ListName
 } from './styled'
 
 export default function Index() {
@@ -30,10 +30,30 @@ export default function Index() {
                        </Icon>
                     </Selected>
                     <List>
-                        <ListItem>Most Upvotes</ListItem>
-                        <ListItem>Least Upvotes</ListItem>
-                        <ListItem>Most Comments</ListItem>
-                        <ListItem>Least Comments</ListItem>
+                        <ListItem>
+                            <ListName>Most Upvotes</ListName> 
+                            <Icon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                            </Icon>
+                        </ListItem>
+                        <ListItem>
+                        <ListName>Least Upvotes</ListName> 
+                            <Icon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                            </Icon>
+                        </ListItem>
+                        <ListItem>
+                        <ListName>Most Comments</ListName> 
+                            <Icon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                            </Icon>
+                        </ListItem>
+                        <ListItem>
+                        <ListName>Least Comments</ListName> 
+                            <Icon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                            </Icon>
+                        </ListItem>
                     </List>
                 </Short>
             </Left>
