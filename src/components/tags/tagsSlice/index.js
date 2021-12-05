@@ -5,7 +5,11 @@ const  initialState = 'all'
 const tagsSlice = createSlice({
     name: "tags",
     initialState: initialState,
-    reducers:  {}
+    reducers:  {
+        change : (state, {payload} ) => {
+            state = payload
+        }
+    }
 });
     
 export default tagsSlice;
