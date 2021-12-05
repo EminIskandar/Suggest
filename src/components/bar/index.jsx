@@ -1,4 +1,7 @@
-import { useState } from 'react' 
+import { useEffect, useState } from 'react'
+import { useSelector ,useDispatch } from 'react-redux' 
+import {shortFilter} from 'helpers/shortFilter'
+import { change } from 'components/suggestions/suggestionsSlice'
 import { 
     Container, Left, Suggest, Icon, Count, Short, Title, 
     Selected, List, ListItem, Right, Add, Name, ListName
@@ -8,6 +11,9 @@ import {
 export default function Index() {
 
     const [selected, setSelected] = useState('Most Upvotes') 
+    const suggests = useSelector(state => state.suggests) 
+    const dispacth = useDispatch()
+    
 
     const handleShortList = (e) => {
         const shortList = e.currentTarget.parentNode.children[1] 
@@ -18,6 +24,15 @@ export default function Index() {
         const name = e.currentTarget.children[0].innerText
         setSelected(name)
     }
+
+    useEffect(() => {
+        if(suggests.payload !== undefined){
+            const filteredData = shortFilter( [...Object.values(suggests.payload)] , selected)
+            dispacth(
+                change({payload : filteredData})
+            ) 
+        }
+    }, [selected])
 
     return (
         <Container>
