@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import { 
     Container, Left, Suggest, Icon, Count, Short, Title, 
     Selected, List, ListItem, Right, Add, Name, ListName
@@ -6,10 +6,16 @@ import {
 
 export default function Index() {
 
+    const [selected, setSelected] = useState('Most Upvotes')
 
     const handleShortList = (e) => {
-        const shortList = e.currentTarget.parentNode.children[1]
-        shortList.classList.toggle('open')
+        const shortList = e.currentTarget.parentNode.children[1] 
+        shortList.classList.toggle('open') 
+    }
+
+    const changeShortList = (e) => {
+        const name = e.currentTarget.children[0].innerText
+        setSelected(name)
     }
 
     return (
@@ -30,26 +36,26 @@ export default function Index() {
                        </Icon>
                     </Selected>
                     <List>
-                        <ListItem>
+                        <ListItem onClick={changeShortList} className={selected === 'Most Upvotes' ? 'selected' : ''}>
                             <ListName>Most Upvotes</ListName> 
-                            <Icon>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
-                            </Icon>
+                                <Icon>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                                </Icon>
                         </ListItem>
-                        <ListItem>
-                        <ListName>Least Upvotes</ListName> 
-                            <Icon>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
-                            </Icon>
+                        <ListItem onClick={changeShortList} className={selected === 'Least Upvotes' ? 'selected' : ''}>
+                            <ListName>Least Upvotes</ListName> 
+                                <Icon>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                                </Icon>
                         </ListItem>
-                        <ListItem>
-                        <ListName>Most Comments</ListName> 
-                            <Icon>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
-                            </Icon>
+                        <ListItem  onClick={changeShortList} className={selected === 'Most Comments' ? 'selected' : ''}>
+                            <ListName>Most Comments</ListName> 
+                                <Icon>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
+                                </Icon>
                         </ListItem>
-                        <ListItem>
-                        <ListName>Least Comments</ListName> 
+                        <ListItem  onClick={changeShortList} className={selected === 'Least Comments' ? 'selected' : ''}>
+                            <ListName>Least Comments</ListName> 
                             <Icon>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#AD1FEA" stroke-width="2" d="M1 5.233L4.522 9 12 1"/></svg>
                             </Icon>
