@@ -7,12 +7,12 @@ const tagsSlice = createSlice({
     initialState: initialState,
     reducers:  {
         change : (state, {payload} ) => {
-            state = payload
+            return state = payload
         }
     }
 });
 
-export const { change } = todosSlice.actions
+export const { change } =tagsSlice.actions
     
 export default tagsSlice;
      
