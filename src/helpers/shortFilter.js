@@ -1,12 +1,10 @@
-import db from '../db/db.json'
-
-export const shortFilter = (type) => {  
+export const shortFilter = (data,type) => {  
     let shortList = [] 
 
     switch (type) {
         case 'Most Upvotes':
 
-            shortList =[...db.productRequests].sort(function(a, b) {
+            shortList =data.sort(function(a, b) {
                 return parseFloat(a.upvotes) - parseFloat(b.upvotes);
             })
             shortList.reverse()
@@ -14,14 +12,14 @@ export const shortFilter = (type) => {
 
 
         case 'Least Upvotes':
-            shortList =[...db.productRequests].sort(function(a, b) {
+            shortList =data.sort(function(a, b) {
                 return parseFloat(a.upvotes) - parseFloat(b.upvotes);
             }) 
             break;
 
 
         case 'Most Comments':
-            shortList =[...db.productRequests].sort(function(a, b) {
+            shortList =data.sort(function(a, b) {
                 return parseFloat(a.comments.length) - parseFloat(b.comments.length);
             })
             shortList.reverse()
@@ -29,7 +27,7 @@ export const shortFilter = (type) => {
 
 
         case 'Least Comments':
-            shortList =[...db.productRequests].sort(function(a, b) {
+            shortList =data.sort(function(a, b) {
                 return parseFloat(a.comments.length) - parseFloat(b.comments.length);
             }) 
             break;
