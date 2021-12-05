@@ -78,6 +78,7 @@ export const List = styled.div`
     position: absolute;
     top:63px;
     display:none;
+    box-shadow: 0px 10px 40px -7px #373F6859;
 
     & ${ListItem}:last-child{
         border-bottom: none;
