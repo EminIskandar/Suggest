@@ -52,6 +52,7 @@ export const Category = styled(Body2)`
 
 export const ToggleMenu = styled.div`
     display: none;
+    cursor: pointer;
 
     li{
         height: 3px;
