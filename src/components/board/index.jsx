@@ -10,9 +10,9 @@ export default function Index() {
 
     const handleToggleMenu = () => { 
         dispatch(
-            change({payload : !isOpen})
+            change({payload : !isOpen.payload})
         )
-    }
+    } 
 
     return (
          <Container>
