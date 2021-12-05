@@ -9,6 +9,7 @@ module.exports = function(config, env) {
     "color" : resolve("src/theme/color"),  
     "typography" : resolve("src/theme/typography"), 
     "themeComponents" : resolve("src/theme/components"), 
+    "helpers": resolve("src/helpers"),  
   });
 
   return config;
