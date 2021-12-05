@@ -22,7 +22,9 @@ export default function Index() {
 
     const changeShortList = (e) => {
         const name = e.currentTarget.children[0].innerText
+        const shortList = e.currentTarget.parentNode
         setSelected(name)
+        shortList.classList.remove('open')
     }
 
     useEffect(() => {
