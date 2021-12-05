@@ -1,29 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Body3} from 'typography'
 import {Container, Tags, Name } from './styled'
+import getAllTags from 'helpers/getAllTags'
 
 export default function Index({theme}) { 
+
+    const allTags = getAllTags() 
+    const [selected, setSelected] = useState('all')
+
     return (
         <Container theme={theme}>
             <Tags theme={theme}>
-                <Name className='selected'>
-                    <Body3>All</Body3>
-                </Name>
-                <Name>
-                    <Body3>UI</Body3>
-                </Name>
-                <Name>
-                    <Body3>UX</Body3>
-                </Name>
-                <Name>
-                    <Body3>Enhancement</Body3>
-                </Name>
-                <Name>
-                    <Body3>Bug</Body3>
-                </Name>
-                <Name>
-                    <Body3>Feature</Body3>
-                </Name>
+                {
+                    allTags.map( (name) => {
+                        return  <Name className={selected === name  ? 'selected' : ''}>
+                                    <Body3>{name}</Body3>
+                                </Name>
+                    })
+                } 
             </Tags>
         </Container>
     )
