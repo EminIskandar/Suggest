@@ -11,6 +11,8 @@ const tagsSlice = createSlice({
         }
     }
 });
+
+export const { change } = todosSlice.actions
     
 export default tagsSlice;
      
