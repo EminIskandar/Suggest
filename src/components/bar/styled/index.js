@@ -77,12 +77,16 @@ export const List = styled.div`
     border-radius: 10px;
     position: absolute;
     top:63px;
+    display:none;
 
     & ${ListItem}:last-child{
         border-bottom: none;
     }
 
-    display:none;
+    &.open{
+        display: block;
+    }
+
 `
 export const Add = styled(button)`
 

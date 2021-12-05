@@ -5,6 +5,13 @@ import {
 } from './styled'
 
 export default function Index() {
+
+
+    const handleShortList = (e) => {
+        const shortList = e.currentTarget.parentNode.children[1]
+        shortList.classList.toggle('open')
+    }
+
     return (
         <Container>
             <Left>
@@ -15,7 +22,7 @@ export default function Index() {
                     <Count>6 Suggestions</Count>
                 </Suggest>
                 <Short>
-                    <Selected>
+                    <Selected onClick={handleShortList}>
                        <Title> Sort by : </Title> 
                        <Name>Most Upvotes</Name>
                        <Icon>
