@@ -1,13 +1,17 @@
 import React from 'react' 
 import {Container , Text, Title, Category, ToggleMenu } from './styled' 
 import { change } from './boardSlice'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 export default function Index() {
 
     const dispatch = useDispatch()
+    const isOpen = useSelector(state => state.isToggleMenuOpen)
 
     const handleToggleMenu = () => { 
+        dispatch(
+            change({payload : !isOpen})
+        )
     }
 
     return (
