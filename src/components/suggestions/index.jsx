@@ -19,8 +19,8 @@ export default function Index() {
         <Container>
             {
                 datas ?  
-                datas.map( ( {upvotes, description, title, category, comments} ) => {
-                    return <Item>
+                datas.map( ( {upvotes, description, title, category, comments}, index ) => {
+                    return <Item key={index}>
                                 <Left>
                                     <Visited>
                                         <Icon>
