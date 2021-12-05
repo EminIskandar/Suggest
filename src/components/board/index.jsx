@@ -35,7 +35,7 @@ export default function Index() {
                  <Title>Frontend Mentor</Title>
                  <Category>Feedback Board</Category> 
              </Text>
-             <ToggleMenu className='' onClick={handleToggleMenu}>
+             <ToggleMenu className={isOpen ? 'open' : ''} onClick={handleToggleMenu}>
                  <ul>
                      <li></li>
                      <li></li>
